@@ -1,0 +1,273 @@
+//  __  __           _       _            
+// |  \/  | ___   __| |_   _| | ___  ___  
+// | |\/| |/ _ \ / _` | | | | |/ _ \/ __| 
+// | |  | | (_) | (_| | |_| | |  __/\__ \ 
+// |_|  |_|\___/ \__,_|\__,_|_|\___||___/ 
+
+{
+"layer": "top",
+"position": "top",
+    
+//------------------------------
+// Left Modules
+//------------------------------
+	"modules-left": [
+	"wlr/taskbar",
+	"tray",
+	"hyprland/window",
+	"mpd"
+	],
+	
+//------------------------------
+// Center Modules
+//------------------------------
+	"modules-center": [
+	"hyprland/workspaces"
+	],
+//------------------------------
+// Right Modules
+//------------------------------
+	"modules-right": [
+	"custom/updates",
+	"cpu",
+	"memory",
+	"pulseaudio",
+	"bluetooth",
+	"network",
+	"battery",
+	"idle_inhibitor",
+	"clock",
+	"custom/power",
+	"custom/notifications"
+	],
+	
+//------------------------------
+// Modules
+//------------------------------
+
+// Workspaces
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+        },
+        "persistent-workspaces": {
+            // START WORKSPACES
+    "*": 3
+            // END WORKSPACES
+        }       
+    },
+// Taskbar
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 21,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+           "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+// CPU
+  "cpu": {
+		"tooltip": true,
+		"interval": 15,
+		"theme": "Dracula-cursors",
+		"format": " {usage}%",
+		"max-length": 10,
+		"on-click": "kitty btop"
+	},
+// Memory
+	"memory": {
+		"tooltip": true,
+		"tooltip-format": " Currently using {used} GB of memory and {swapUsed} GB of swap.\n{avail} GB of memory and {swapAvail} GB of swap available.",
+		"theme": "Dracula-cursors",
+		"interval": 30,
+		"format": " {percentage}%",
+		"max-length": 10,
+		"on-click": "kitty btop"
+	},
+// Tray
+	"tray": {
+		"icon-size": 20,
+		"spacing": 10
+	},
+// Music Player
+	"mpd": {
+		"format": "{stateIcon} {title}",
+		"format-disconnected": "󰝚 Disconnected",
+		"format-stopped": " 󰝚  Stopped",
+		"interval": 2,
+		"random-icons": {
+        "off": "<span color=\"#f53c3c\"></span> ",
+        "on": " "
+		},
+		"repeat-icons": {
+			"on": " "
+		},
+		"single-icons": {
+			"on": "1"
+		},
+		"state-icons": {
+			"paused": "  ",
+			"playing": "  "
+		},
+		"tooltip-format": "MPD (connected)\n{artist}-{album}-{title}",
+		"tooltip-format-disconnected": "MPD (disconnected)",
+		"on-click": "mpc toggle"
+	},
+// MPD
+	"custom/mpd": {
+		"format": "󰝚 {}",
+		"tooltip": true,
+		"tooltip-format":"Hello",
+		"return-type": "string",
+		"exec": "~/bin/musicinfo title",
+		"on-click-left": "mpc toggle",
+		"interval": 5,
+		"separator": false
+    },
+// Clipboard
+	"custom/clipboard": {
+		"format": "󰅌",
+		"tooltip": false,
+		"on-click": "copyq menu",
+		"on-click-right": "copyq toggle"
+	},
+// Audio
+	"pulseaudio": {
+		"tooltip": true,
+		"tooltip-format": "{icon} Currently at {volume}%\n{desc}",
+		"scroll-step": 5,
+		"format": "{icon}",
+		"format-muted": "󰝟",
+		"on-click": "volumectl %",
+		"on-click-right": "pavucontrol",
+		"format-icons": ["󰕿", "󰖀", "󰕾"]
+	},
+// Bluetooth
+	"bluetooth": {
+		"format": "󰂯",
+		"format-disabled": "󰂲",
+		"format-off": "",
+		"format-connected": "󰂱",
+		"format-connected-battery": "{icon}",
+		"format-icons": ["󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥉"],
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"on-click": "~/.config/rofi/script/bluetooth.sh"
+	},
+// Network
+	"network": {
+		"tooltip": true,
+		"tooltip-format-wifi": "{icon} Connected to {essid}\nSignal: {signalStrength}",
+		"format-disconnected": "󰤭",
+		"format-wifi": "{icon}",
+		"format-icons": ["󰤯","󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-ethernet": "󰈀",
+		"format-linked": "󰖂",
+		"on-click": "networkmanager_dmenu",
+		"on-click-right": "nm-connection-editor"
+	},
+// Battery
+	"battery": {
+		"tooltip": true,
+		"tooltip-format": "Battery is currently at {capacity}%.\n{timeTo}.",
+		"states": {
+			"good": 95,
+			"warning": 39,
+			"critical": 20
+		},
+		"format": "{icon}",
+		"format-charging": "󱐋{icon}",
+		"format-plugged": " ",
+		"format-icons": ["", "", "", "", ""]
+	},
+// Idle Inhibitor/Screen Lock
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
+	},
+// Clock
+	"clock": {
+		"tooltip": true,
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode":"month",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"on-scroll": 1,
+			"on-click-right": "mode",
+			"format": {
+				"months":     "<span color='#f5c2e7'><b>{}</b></span>",
+				"days":       "<span color='#cdd6f4'><b>{}</b></span>",
+				"weeks":      "<span color='#74c7ec'><b>W{}</b></span>",
+				"weekdays":   "<span color='#fab387'><b>{}</b></span>",
+				"today":      "<span color='#a6e3a1'><b><u>{}</u></b></span>"
+			}
+		},
+		"format": "{: %I:%M%p}"
+	},
+// Notifications
+	"custom/notifications": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "󱅫",
+			"none": "󰂚",
+			"dnd-notification": "󱅫",
+			"dnd-none": "󰂛",
+			"inhibited-notification": "󱅫",
+			"inhibited-none": "󰂚",
+			"dnd-inhibited-notification": "󱅫",
+			"dnd-inhibited-none": "󰂛"
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "sleep 0.1; swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
+// PowerMenu
+    "custom/power": {
+		  "format": "",
+		  "tooltip": false,
+		  "on-click": "~/.config/rofi/script/powermenu.sh"
+	},
+// Applications
+	"hyprland/window": {
+		"format": "{}",
+		"tooltip": true,
+		"rewrite": {
+			"(.*) — Mozilla Firefox": "$1",
+			"(.*) - zsh": "> [$1]"
+		},
+		"separate-outputs": true
+	},
+// Updates
+	"custom/updates": {
+        "format": " {}",     
+        "exec": "~/bin/check-updates.sh",
+        "restart-interval": 60,
+        "on-click": "~/bin/update.sh",
+        "tooltip": false
+    }
+}
+

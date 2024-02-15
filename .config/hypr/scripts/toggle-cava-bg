@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if a flag file exists
+if [ -f /tmp/toggle_flag.txt ]; then
+    # If the flag file exists, execute command 2 and remove the flag file
+    pkill -f "kitty -c /home/shridal/.config/kitty/kitty-bg.conf --class=kitty-bg cava" &
+    rm /tmp/toggle_flag.txt
+else
+    # If the flag file does not exist, execute command 1 and create the flag file
+    kitty -c /home/shridal/.config/kitty/kitty-bg.conf --class=kitty-bg cava &
+    touch /tmp/toggle_flag.txt
+fi

@@ -1,5 +1,6 @@
 @define-color background rgb(30, 32, 48);
-@define-color exp rgba(30, 32, 48, 0.7);
+@define-color balt rgba(30, 32, 48, 0.7);
+@define-color exp rgba(30, 32, 48, 0.1);
 @define-color overlay rgb(36, 39, 58);
 @define-color foreground rgb(202, 211, 245);
 @define-color white rgb(202, 211, 245);
@@ -13,4 +14,4 @@
 @define-color cyan rgb(139, 213, 202);
 @define-color pink rgb(245, 189, 230);
 @define-color rosewater rgb(244, 219, 214);
-
+@define-color overlay2 rgb(80, 82, 98);

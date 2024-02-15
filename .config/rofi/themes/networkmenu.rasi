@@ -19,6 +19,7 @@ window {
     border-radius:                  14px;
     width:                          400px;
     height:                         420px;
+    padding:						10px;
     location:                       center;
     anchor:                         center;
     x-offset:                       0;
@@ -86,6 +87,7 @@ listview {
     columns:                        1;
     lines:							7;
     spacing:                        4px;
+    padding:						0 10px 0 10px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
@@ -95,15 +97,15 @@ mainbox {
     background-color:               @background;
     children:                       [ inputbar, listview ];
     spacing:                       	10px;
-    padding:                        10px;
+    padding:                        0px;
 }
 
 element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    border-radius:                  10px;
-    padding:                        5px;
+    border-radius:                  14px;
+    padding:						10px 0px 10px 0px;
 }
 
 element-icon {
@@ -118,10 +120,11 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
+	font:                           "JetBrainsMono NL Nerd Font 10";
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0;
-    margin:                         2px 0px 2px 2px;
+    margin:                         0px 0px 0px 0px;
 }
 
 element normal.urgent,

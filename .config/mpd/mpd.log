@@ -869,3 +869,48 @@ Aug 25 13:50 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[R
 Aug 25 13:50 : exception: No such playlist
 Aug 25 13:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Aug 25 13:52 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Aug 25 13:56 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Aug 25 13:56 : player: played "YOASOBI「あの夢をなぞって (Ballade Ver.)」 - スマホ映画『夢の雫と星の花』コラボスペシャルムービー.m4a"
+Aug 25 14:01 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Aug 25 14:01 : player: played "YOASOBI「アンコール」Official Music Video.m4a"
+Aug 25 14:04 : exception: Unsupported URI scheme
+Aug 25 14:04 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Aug 25 14:04 : exception: No such playlist
+Aug 25 15:09 : player: played "「ツバメ」- YOASOBI with ミドリーズ Official Music Video.m4a"
+Aug 25 15:09 : output: Failed to pause "default detected output" (pulse): failed to connect the stream: Connection terminated
+Oct 07 14:42 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 07 14:42 : exception: Failed to decode /home/shridal/Music/「ツバメ」- YOASOBI with ミドリーズ Official Music Video.m4a; avformat_open_input() failed: Invalid data found when processing input
+Oct 07 14:42 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:42 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:42 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:46 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:46 : player: played "YOASOBI「あの夢をなぞって (Ballade Ver.)」 - スマホ映画『夢の雫と星の花』コラボスペシャルムービー.m4a"
+Oct 07 14:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:50 : player: played "YOASOBI「あの夢をなぞって」 Official Music Video.m4a"
+Oct 07 14:54 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:54 : player: played "YOASOBI「もう少しだけ」Official Music Video.m4a"
+Oct 07 14:57 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 14:57 : player: played "YOASOBI「もしも命が描けたら」Official Music Video.m4a"
+Oct 07 15:01 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 15:01 : player: played "YOASOBI「アドベンチャー」Official Music Video.m4a"
+Oct 07 15:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 15:06 : player: played "YOASOBI「アンコール」Official Music Video.m4a"
+Oct 07 15:09 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 15:10 : player: played "YOASOBI「セブンティーン」Official Music Video.m4a"
+Oct 07 15:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 15:13 : player: played "「ツバメ」- YOASOBI with ミドリーズ Official Music Video.m4a"
+Oct 07 15:17 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Oct 07 15:17 : player: played "YOASOBI「ハルカ」Official Music Video.m4a"
+Dec 02 11:35 : exception: Not playing
+Jan 27 10:23 : exception: Unsupported URI scheme
+Jan 27 10:23 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Jan 27 10:23 : exception: No such playlist
+Feb 14 17:43 : exception: Unsupported URI scheme
+Feb 14 17:43 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Feb 14 17:43 : exception: No such playlist
+Feb 14 23:02 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 14 23:06 : player: played "Aaja Matra (Sajjan Raj Vaidya).m4a"
+Feb 14 23:07 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 14 23:12 : player: played "Sajjan Raj Vaidya - Chitthi Bhitra [Official Release].m4a"
+Feb 14 23:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 14 23:18 : player: played "Sajjan Raj Vaidya - Naganya Maya [Official Release].m4a"

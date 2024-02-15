@@ -83,7 +83,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		gtklock
+		swaylock -f
         ;;
     $suspend)
 		run_cmd --suspend

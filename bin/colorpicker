@@ -11,10 +11,10 @@ hyprpick() {
 
 check_dependencies() {
     ! command -v hyprpicker &>/dev/null &&
-        notify-send -u critical -a "Color Picker" xcolor-pick "gpick needs to be installed" && exit 1
+        notify-send -u critical -a "Color Picker" waycolor-pick "hyprpicker needs to be installed" && exit 1
 
-    ! command -v magick &>/dev/null &&
-        notify-send -u critical -a "Color Picker" xcolor-pick "imagemagick needs to be installed" && exit 1
+    ! command -v wl-paste &>/dev/null &&
+        notify-send -u critical -a "Color Picker" waycolor-pick "wl-paste needs to be installed" && exit 1
 }
 
 main() {
