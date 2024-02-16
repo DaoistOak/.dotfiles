@@ -14,8 +14,7 @@
 	"modules-left": [
 	"wlr/taskbar",
 	"tray",
-	"hyprland/window",
-	"mpd"
+	"hyprland/window"
 	],
 	
 //------------------------------
@@ -37,8 +36,8 @@
 	"battery",
 	"idle_inhibitor",
 	"clock",
-	"custom/power",
-	"custom/notifications"
+	"custom/notifications",
+	"custom/power"
 	],
 	
 //------------------------------
@@ -85,7 +84,7 @@
 		"tooltip": true,
 		"interval": 15,
 		"theme": "Dracula-cursors",
-		"format": " {usage}%",
+		"format": " {usage}% /",
 		"max-length": 10,
 		"on-click": "kitty btop"
 	},
@@ -95,7 +94,7 @@
 		"tooltip-format": " Currently using {used} GB of memory and {swapUsed} GB of swap.\n{avail} GB of memory and {swapAvail} GB of swap available.",
 		"theme": "Dracula-cursors",
 		"interval": 30,
-		"format": " {percentage}%",
+		"format": "/  {percentage}%",
 		"max-length": 10,
 		"on-click": "kitty btop"
 	},
@@ -220,6 +219,7 @@
 				"weeks":      "<span color='#74c7ec'><b>W{}</b></span>",
 				"weekdays":   "<span color='#fab387'><b>{}</b></span>",
 				"today":      "<span color='#a6e3a1'><b><u>{}</u></b></span>"
+				
 			}
 		},
 		"format": "{: %I:%M%p}"
