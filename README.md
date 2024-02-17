@@ -28,7 +28,6 @@ I use [Arch](https://archlinux.org/) BTW!
 ## Some Screenshots
 ![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/1.png)<br>
 ![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/2.png)![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/3.png)
-#### panel
 ![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/4.png)
 ## Animations and Plugins in action
 Will be comming... Eventually... I'm lazy.
