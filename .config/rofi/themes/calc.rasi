@@ -3,6 +3,8 @@
 
 configuration {
     show-icons:                     false;
+    display-window: 				"Windows :";
+    window-format: 					"{w} · {c} · {t}";
     disable-history:                false;
 	click-to-exit: 					true;
 }
@@ -12,14 +14,13 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               transparent;
+    background-color:               @background;
     text-color:                     @foreground;
     border:                  		2px;
     border-color:                  	@accent;
     border-radius:                  14px;
-    width:                          400px;
-    height:                         420px;
-    padding:						10px;
+    width:                          300px;
+    height:							400px;
     location:                       center;
     anchor:                         center;
     x-offset:                       0;
@@ -32,44 +33,44 @@ prompt {
     padding:    					10px 5px 10px 5px;
 	background-color: 				@background;
 	text-color: 					@foreground;
-    border:                  		2px 0px 2px 2px;
+    border:                  		2px 1px 2px 2px;
     border-color:                  	@accent;
     border-radius:                  14px 0px 0px 14px;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"直";
-    spacing: 						1;
-    border-radius: 					14px;
-    border: 						2px;
-    background-color:             	@background;
-    text-color: 					@text;
-    border-color:					@accent;
-    padding:    					6px 10px 6px 10px;
-    font:                           "JetBrainsMono NL Nerd Font 12";
+	str: 							"📝";
+    border-radius:                  14px;
+    background-color:               @background;
+    text-color:                     @text;
+    border:                  		2px 2px 2px 2px;
+    border-color:                  	@accent;
+    border-radius:                  14px;
+    margin:							0px;    
+    padding:    					5px 10px 5px 14px;
+	font:							"Iosevka Nerd Font 14";
 }
 
 entry {
     background-color:               @background;
-    text-color:                     @text;
-    border:                  		2px 2px 2px 1px;
+    text-color:                     @foreground;
+    border:                  		2px 2px 2px 0px;
     border-radius:                  0px 14px 14px 0px;
     border-color:                  	@accent;
     placeholder-color:              @foreground;
-    placeholder:                    "";
+    placeholder:                    "Find...";
     expand:                         true;
     horizontal-align:               0;
     blink:                          true;
-    padding:                        10px 5px 10px 5px;
+    padding:                        10px;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt, entry ];
     spacing:                        0;
-    background-color:               transparent;
-    text-color:                     @text;
-    border-radius:					15px;
+    background-color:               @background;
+    text-color:                     @foreground;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -78,27 +79,23 @@ inputbar {
 
 case-indicator {
     background-color:               @background;
-    text-color:                     @text;
+    text-color:                     @foreground;
     spacing:                        0;
 }
 
 
 listview {
     background-color:               @background;
-    border:							2px;
-    border-radius:					14px;
-    border-color:					@accent;
     columns:                        1;
     lines:							7;
-    spacing:                        0px;
-    padding:						0 0px 0 0px;
+    spacing:                        5px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
 }
 
 mainbox {
-    background-color:               transparent;
+    background-color:               @background;
     children:                       [ inputbar, listview ];
     spacing:                       	10px;
     padding:                        10px;
@@ -108,8 +105,8 @@ element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    border-radius:                  14px;
-    padding:						10px 0px 10px 0px;
+    border-radius:                  0px;
+    padding:                        5px;
 }
 
 element-icon {
@@ -124,24 +121,10 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
-	font:                           "JetBrainsMono NL Nerd Font 10";
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0;
-    margin:                         0px 0px 0px 0px;
-}
-
-element normal.urgent,
-element alternate.urgent {
-    background-color:               @foreground;
-    text-color:                     @foreground;
-    border-radius:                  0px;
-}
-
-element normal.active,
-element alternate.active {
-    background-color:               @background;
-    text-color:                     @foreground;
+    margin:                         2px 0px 2px 2px;
 }
 
 element selected {
@@ -149,16 +132,29 @@ element selected {
     background-color:				transparent;
     text-color:                     @background;
     border:                  		0px;
-    border-radius:                  0px;
+    border-radius:                  14px;
     border-color:                  	@accent;
 }
 
-element selected.urgent {
-    background-color:               @foreground;
-    text-color:                     @foreground;
+element.active,
+element.selected.urgent {
+  background-color: @selected;
+  text-color: @background;
+  border-color: @selected;
 }
 
-element selected.active {
-    background-color:               @background;
-    color:                          @foreground;
+element.selected.urgent {
+  border-color: @accent;
 }
+
+element.urgent,
+element.selected.active {
+  background-color: @off;
+  text-color: @background;
+  border-color: @off;
+}
+
+element.selected.active {
+  border-color: @accent;
+}
+

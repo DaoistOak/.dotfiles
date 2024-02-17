@@ -914,3 +914,34 @@ Feb 14 23:07 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Feb 14 23:12 : player: played "Sajjan Raj Vaidya - Chitthi Bhitra [Official Release].m4a"
 Feb 14 23:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Feb 14 23:18 : player: played "Sajjan Raj Vaidya - Naganya Maya [Official Release].m4a"
+Feb 15 16:37 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 16:40 : player: played "YOASOBI「怪物」Official Music Video　(YOASOBI - Monster).m4a"
+Feb 15 19:23 : exception: Unsupported URI scheme
+Feb 15 19:23 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Feb 15 19:23 : exception: No such playlist
+Feb 15 19:25 : exception: Unsupported URI scheme
+Feb 15 19:25 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Feb 15 19:25 : exception: No such playlist
+Feb 15 19:26 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:30 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:31 : player: played "Sajjan Raj Vaidya - Chitthi Bhitra [Official Release].m4a"
+Feb 15 19:35 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:35 : player: played "Sajjan Raj Vaidya - Ek Sarvanaam [Official Release].m4a"
+Feb 15 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:40 : player: played "Sajjan Raj Vaidya - Hawaijahaj [Official Video].m4a"
+Feb 15 19:47 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:47 : player: played "Sajjan Raj Vaidya - Lukaamaari [Official Music Video].m4a"
+Feb 15 19:52 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:52 : player: played "Sajjan Raj Vaidya - Mooskaan [Official Lyrical Video].m4a"
+Feb 15 19:57 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 15 19:57 : player: played "Sajjan Raj Vaidya - Naganya Maya [Official Release].m4a"
+Feb 16 00:23 : player: played "Sajjan Raj Vaidya - Parkhaai [Official Release].m4a"
+Feb 16 23:51 : exception: Unsupported URI scheme
+Feb 16 23:51 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Feb 16 23:51 : exception: No such playlist
+Feb 17 17:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 17 17:50 : player: played "「ツバメ」- YOASOBI with ミドリーズ Official Music Video.m4a"
+Feb 17 17:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 17 17:51 : exception: Unsupported URI scheme
+Feb 17 17:51 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Feb 17 17:51 : exception: No such playlist

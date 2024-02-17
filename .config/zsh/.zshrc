@@ -44,7 +44,7 @@ case $terminal in
 	;;
   alacritty)
     alias -g fetch='neofetch'
-    echo "switching to fish"
+    fish
     ;;
   xterm-256color)
     alias -g fetch='pfetch'
