@@ -1,4 +1,5 @@
 # Hello!!
+![dotfile](.dotfiles/assets/banner/.dotfiles.png)
 Welcome to my dotfiles!
 ### Details
 - **OS** <br>
@@ -24,9 +25,6 @@ I use [Arch](https://archlinux.org/) BTW!
 [Geany](https://www.geany.org/)
 - **TUI-IDE**<br>
 [nvim with NVChad](https://nvchad.com/)
-## Disclaimer!
-This is based on another Hyprland Dotfiles repo. I have no memory of the repo name since I had cloned it a while back. Also, I have heavily customised the Dotfiles.
-Anyways, I will give credit to the OG creator if I find the repo.
 ## Some Screenshots
 ![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/1.png)<br>
 ![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/2.png)![alt text](https://github.com/DaoistOak/.dotfiles/blob/main/.dotfiles/assets/New/3.png)
