@@ -147,7 +147,7 @@ window#waybar {
 
 @keyframes notif {
   to {
-      background-color: @overlay;
+      background-color: @foreground;
       color: @foreground;
   }
 }
@@ -391,7 +391,7 @@ window#waybar.empty #window {
 
 #custom-notifications.dnd-none,
 #custom-notifications.dnd-inhibited-none {
-  color: @magenta;
+  color: @overlay;
 }
 
 #custom-notifications.notification,

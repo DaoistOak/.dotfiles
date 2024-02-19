@@ -1,6 +1,14 @@
+/*
+You can type here any CSS rule recognized by GTK+.
+You can temporarily disable this custom CSS by clicking on the “Pause” button above.
+
+Changes are applied instantly and globally, for the whole application.
+*/
+
 * {
   font-family: "JetBrainsMonoNL Nerd Font";
   transition: 200ms;
+  color: #cad3f5;
 }
 .floating-notifications.background .notification-row {
   margin-left: 100px;
@@ -132,16 +140,19 @@
   color: #24273a;
 }
 .control-center .notification-row {
-	background-color:#24273a;
+	background-color:transparent;
 	color:#24273a;
 	border:0px;
 	border-radius: 14px;
+	margin: 0px;
 }
 .control-center .notification-row .notification-background {
-	background-color:#24273a;
-	color:#24273a;
+	background-color: transparent;
+	color: transparent;
 	border-radius: 14px;
 	border:0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .control-center .notification-row .notification-background .notification {
@@ -236,7 +247,7 @@
 progressbar,
 progress,
 trough {
-  border-radius: 12.6px;
+  border-radius: 15px;
 }
 
 progressbar {
@@ -253,7 +264,7 @@ progressbar {
 }
 
 trough {
-  background-color: #363a4f;
+  background-color: #24273a;
 }
 
 .control-center trough {
@@ -261,57 +272,69 @@ trough {
 }
 
 .control-center-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  background: #363a4f;
-  border: 1px solid #494d64;
-  box-shadow: none;
+  margin-top: 0px;
+  border-radius: 15px;
 }
 
 .control-center-dnd:checked {
-  background: #363a4f;
+  background: #24273a;
 }
 
 .control-center-dnd slider {
-  background: #494d64;
-  border-radius: 8px;
+  background: #24273a;
+  border: 2px solid #f4dbd6;
+  color: #ffffff;
+  border-radius: 15px;
 }
 
 .widget-dnd {
-  padding:10px;
+  padding: 0 10px;
   margin: 0px;
   font-size: 14px;
+  color:#cad3f5;
+  border-radius: 15px;
 }
 
 .widget-dnd > switch {
   font-size: initial;
-  border-radius: 8px;
-  background: #363a4f;
-  border: 1px solid #494d64;
+  color: #24273a;
+  background: #24273a;
+/*
+  border: 2px solid #cad3f5;
+*/
   box-shadow: none;
+  border-radius: 15px;
 }
 
 .widget-dnd > switch:checked {
-  background: #363a4f;
+  color: #24273a;
+  border-radius: 15px;
 }
 
 .widget-dnd > switch slider {
-  background: #494d64;
-  border-radius: 8px;
-  border: 1px solid #6e738d;
+  color: #24273a;
+  border-radius: 15px;
 }
 
 
 /* Volume and Brightness */
 .widget-volume {
   margin: 0px 5px 0px 5px;
+  border-radius: 15px 15px 0px 0px;
   font-size: 35px;
-  background: none;
+  background: #242736;
+  border-top: 2px solid #f4dbd6;
+  border-left: 2px solid #f4dbd6;
+  border-right: 2px solid #f4dbd6; 
 }
 .widget-backlight {
   margin: -20px 5px 0px 5px;
+  border-radius: 0px 0px 15px 15px;
   font-size: 35px;
-  background: none;
+  background: #242736;
+  border-bottom: 2px solid #f4dbd6;
+  border-left: 2px solid #f4dbd6;
+  border-right: 2px solid #f4dbd6;   
 }
 
 
@@ -337,4 +360,3 @@ trough {
 .widget-mpris-subtitle {
   font-size: 1.1rem;
 }
-

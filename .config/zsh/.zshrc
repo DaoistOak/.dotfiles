@@ -35,7 +35,9 @@ alias -g parrot='curl parrot.live'
 alias -g portainer='sudo docker start Portainer'
 alias -g dotfiles='git --git-dir=/home/shridal/.dotfiles --work-tree=/home/shridal'
 alias -g web='qutebrowser'
+alias -g weather='curl wttr.in'
 # Opening prompt
+
 
 terminal=$TERM
 case $terminal in
