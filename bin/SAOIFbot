@@ -1,0 +1,14 @@
+#!/bin/python3
+from pynput.keyboard import Key, Controller
+import time
+
+keyboard = Controller()
+
+time.sleep(1)
+while True:
+    #    keyboard.press(',')
+    keyboard.press('.')
+    time.sleep(0.013)
+    #    keyboard.press('-')
+
+
