@@ -945,3 +945,7 @@ Feb 17 17:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Feb 17 17:51 : exception: Unsupported URI scheme
 Feb 17 17:51 : exception: Failed to open '/home/shridal/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
 Feb 17 17:51 : exception: No such playlist
+Feb 17 23:38 : player: played "「ツバメ」- YOASOBI with ミドリーズ Official Music Video.m4a"
+Feb 17 23:38 : output: Failed to pause "default detected output" (pulse): failed to connect the stream: Connection terminated
+Feb 20 16:23 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 21 12:14 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
