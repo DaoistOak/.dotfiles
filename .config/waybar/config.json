@@ -12,6 +12,7 @@
 // Left Modules
 //------------------------------
 	"modules-left": [
+	"custom/keybinds",
 	"wlr/taskbar",
 	"tray",
 	"hyprland/window"
@@ -30,7 +31,7 @@
 	"custom/updates",
 	"cpu",
 	"memory",
-	"pulseaudio",
+	"wireplumber",
 	"bluetooth",
 	"network",
 	"battery",
@@ -156,6 +157,12 @@
 		"on-click-right": "pavucontrol",
 		"format-icons": ["󰕿", "󰖀", "󰕾"]
 	},
+	"wireplumber": {
+    "format": "{icon}",
+    "format-muted": "󰝟",
+    "on-click": "helvum",
+    "format-icons": ["󰕿", "󰖀", "󰕾"]
+	},
 // Bluetooth
 	"bluetooth": {
 		"format": "󰂯",
@@ -206,7 +213,7 @@
 // Clock
 	"clock": {
 		"tooltip": true,
-		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"tooltip-format": "<tt>{calendar}</tt>",
 		"calendar": {
 			"mode":"month",
 			"mode-mon-col": 3,
@@ -268,6 +275,13 @@
         "restart-interval": 60,
         "on-click": "~/bin/update.sh",
         "tooltip": false
-    }
+    },
+// Keybinds
+	"custom/keybinds": {
+    // 𝒦  
+		"format": "󰣇 ",
+		"on-click": "kitty nvim $XDG_CONFIG_HOME/hypr/conf/keybinds/keybinds.conf",
+		"tooltip": false
+	}
 }
 
