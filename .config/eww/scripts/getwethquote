@@ -1,2 +1,0 @@
-#!/bin/bash
-echo -e $(< /tmp/weather/weather-quote) | head -n1

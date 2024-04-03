@@ -1,6 +1,5 @@
 #!/bin/sh
 killall waybar
-killall waypaper
-killall swww
-waypaper --restore
-waybar -c ~/.config/waybar/config.json
+killall swaync
+waybar -c .config/hypr/waybar/config.json -s .config/hypr/waybar/style.css
+swaync

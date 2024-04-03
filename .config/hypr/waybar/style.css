@@ -1,0 +1,426 @@
+@import url("themes/Catppuccin.css");
+* {
+	border: none;
+	font-family: "JetBrainsMono Nerd Font";
+	font-size: 14px;
+	min-height: 1px;
+	border-radius: 15px;
+	transition: 0.5s ease-in-out;
+}
+window#waybar {
+    border-radius: 0px 0 0 0px;
+    background-color: @background-transparent;
+    /*background: linear-gradient(to right ,@foreground 0%, @background-transparent 20%);*/
+    transition-property: background-color;
+    transition-duration: .5s;	
+}
+
+/*
+------------------------------
+      _    
+|  __|__|_ 
+|_(/_|  |_ 
+------------------------------
+*/
+#custom-keybinds{
+	background-color: @foreground;
+	color: @overlay;
+	padding-left: 20px; 
+	margin-right: 0px;
+	margin-left: 0px;
+	border-radius: 0 0 0 100px;
+	font-size: 25px;
+}
+#taskbar{
+    background-color: @foreground;
+    padding-right: 15px;    
+    padding-left: 0px;
+    border-radius: 0 100px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#taskbar button{
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0 -3 5 5px; */
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.8); */
+    background-color: @transparent;
+    margin: 1px 3px;
+    padding: 0px 8px;
+    font-weight: bolder;
+    color: @foreground;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+}
+#taskbar button:hover{
+	background-color: @transparent;
+	box-shadow: @background-transparent 0 5 0 0;
+	margin: 1px 3px;
+    padding: 0px 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+#taskbar button.minimized{
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0 -3 5 5px; */
+    background-color: @overlay;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+}
+
+#taskbar button.urgent{
+    box-shadow: @red 0 5 0 0;
+    background-color: transparent;
+	margin: 1px 3px;
+    padding: 0px 8px;
+    border-radius: 10px;
+}
+
+#taskbar button.active{
+    background-color: transparent;
+    box-shadow: @overlay 0 5 0 0;
+    margin: 0px 3px 3px 3px;
+    padding: 0px 8px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+}
+/*System Tray*/
+#tray {
+	color: @foreground;
+	background: transparent;
+	border-radius: 14px;
+	border: 2px solid @rosewater;
+	margin: 2px 0px 2px 10px;
+	padding: 0px 6px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+/*Window Name*/
+#window {
+	background: @rosewater;
+	color: @overlay;
+	font-size: 6px;
+    border-radius: 15px;
+    margin: 2px 0px 2px 10px;
+    padding: 2px 10px 2px 10px;
+}
+/* make window module transparent when no windows present */
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 2px 0px 2px 10px;
+}
+/*
+------------------------------
+ _              
+/  _ .__|_ _ ._ 
+\_(/_| ||_(/_|   
+------------------------------
+*/
+/*
+ Workspaces
+*/
+#workspaces {
+    background: @overlay;
+    margin: 3px 1px 3px 1px;
+    padding: 0px 1px 0px 1px;
+    border-radius: 15px;
+    border: 1px @rosewater;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 1;
+    font-size: 16px;
+}
+#workspaces button {
+    padding: 0px 2px;
+    margin: 4px 1px;
+    border-radius: 15px;
+    border: 0px;
+    color: @overlay2;
+    background-color: @overlay2;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.6;
+}
+#workspaces button.active {
+    color: @rosewater;
+    background: @rosewater;
+    border-radius: 15px;
+    min-width: 30px;
+    transition: all 0.5s ease-in-out;
+    opacity:1.0;
+    padding: 0px 5px;
+    margin: 1px 1px;
+}
+#workspaces button:hover {
+    color: @rosewater;
+    background: @rosewater;
+    border-radius: 15px;
+    opacity:0.7;
+}
+
+/*
+------------------------------
+ _           
+|_)o _ |__|_ 
+| \|(_|| ||_ 
+     _|      
+------------------------------
+*/
+/*(Custom/Updates)*/
+#custom-updates{
+	margin: 2px 10px 2px 0px;
+	background: transparent;
+	color: @foreground;
+	font-size: 16px;
+	padding: 0 6px;
+	border-radius:15px;
+}
+/*Cpu and Memory(cpu memory)*/
+#cpu,#memory {
+	font-size: 16px;
+	padding: 0 0px 0 0px;
+	color: @magenta;
+	background: transparent;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#cpu{
+	border-radius: 15px 0 0 15px;
+	margin: 0 -5px 0 0;
+}
+#memory{
+	border-radius: 0px 15px 15px 0px;
+	margin: 0 10px 0 -5px;
+}
+/*Pipewire-Audio Bluetooth Ethernet/Wifi Battery Idle-Inhibitor*/
+#bluetooth,
+#custom-reading,
+#wireplumber,
+#pulseaudio,
+#battery,
+#network,
+#idle_inhibitor {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 2px 0px;
+	font-size: 20px;
+	border: 2px solid @overlay;
+	background: @overlay;
+}
+/*Pipewire-Audio*/
+#wireplumber {
+	color: @blue;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 14px 0 0 14px;
+}
+#wireplumber.muted {
+  font-size: 20px;
+  color: @magenta;
+}
+/*Pulseaudio-Audio*/
+#pulseaudio {
+	background: @overlay;
+	color: @blue;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 14px 0 0 14px;
+}
+#pulseaudio.muted {
+  font-size: 20px;
+  color: @magenta;
+}
+/*Power*/
+#custom-reading {
+	border-radius: 0px;
+	font-size: 17px;
+	color: @pink;
+	padding-left: 2px;
+	padding-right: 5px;
+}
+/*Bluetooth*/
+#bluetooth,
+#bluetooth.connected,
+#bluetooth.connected-battery,
+#bluetooth.on {
+	border-radius: 0px;
+	padding-right: 5px;
+	background: @overlay;
+	color: @blue;
+}
+#bluetooth.disabled,
+#bluetooth.off {
+  color: @white;
+}
+/*Network*/
+#network.ethernet,
+#network {
+	border-radius: 0px;
+	background: @overlay;
+	color: @cyan;
+  padding-right:10px;
+}
+#network.disconnected {
+  color: @red;
+}
+/*Battery*/
+#battery {
+	background: @overlay;
+	color: @green;
+	padding-right:15px;
+	border-radius: 0;
+}
+#battery.charging {
+	background: @overlay;
+	color: @purple;
+	padding-left: 2px;
+}
+#battery.plugged {
+	background: @overlay;
+	color: @purple;
+	padding-right:0px;
+}
+#battery.critical:not(.charging) {
+  background: @overlay;
+  color: @red;
+  animation-name: lowbat;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes lowbat {
+    to {
+        background-color: @overlay;
+        color: @foreground;
+    }
+}
+/*Idle-Inhibitor*/
+#idle_inhibitor {
+	background: @overlay;
+	padding-right: 10px;
+	border-radius: 0 15px 15px 0;
+}
+#idle_inhibitor.deactivated {
+  color: @green;
+}
+#idle_inhibitor.activated {
+  color: @pink;
+}
+
+
+
+/*Clock*/
+#clock {
+  font-size: 16px;
+	background: @overlay;
+	color: @cyan;
+	border-radius: 15px;
+	padding: 0 10px;
+	margin: 2px 5px;
+}
+
+/*Notification & Power*/
+/*Notification*/
+#custom-notifications,
+#custom-notifications.none,
+#custom-notifications.inhibited-none{
+	font-size: 18px;
+	border-radius: 0 0 0 100px;
+	color: @overlay;
+	background: @foreground;
+	padding-right: 12px;
+	padding-left: 25px;
+}
+#custom-notifications.dnd-none,
+#custom-notifications.dnd-inhibited-none {
+  color: @overlay;
+}
+#custom-notifications.notification,
+#custom-notifications.dnd-notification,
+#custom-notifications.inhibited-notification,
+#custom-notifications.dnd-inhibited-notification {
+  color: @overlay;
+  background: @foreground;
+  animation-name: notif;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+@keyframes notif {
+  to {
+      background-color: @foreground;
+      color: @foreground;
+  }
+}
+#custom-notifications.dnd-notification,
+#custom-notifications.dnd-inhibited-notification {
+  color: @overlay;
+  background: @foreground;
+  animation-name: dndnotif;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes dndnotif {
+  to {
+      background-color: @overlay;
+      color: @foreground;
+  }
+}
+/*Power*/
+#custom-power{
+	margin: 0px 0px 0px 0px;
+	background: @foreground;
+	color: @overlay;
+	font-size: 18px;
+	padding: 0 8px 0 6px;
+	border-radius:0px;
+	min-height: 34px;
+}
+/*
+------------------------------
+|\/|o _ _ 
+|  ||_>(_ 
+------------------------------
+*/
+tooltip {
+	border-radius: 15px;
+	border: 2px solid @rosewater;
+	padding: 15px;
+	color: @foreground;
+	background-color: @overlay;
+}
+
+tooltip label {
+	padding: 5px;
+	background-color: @overlay;
+}
+
+
+/*UNUSUD*/
+/* Style for the custom MPD widget */
+/*
+#mpd {
+  font-family: "JetBrainsMono Nerd Font Light";
+  font-size: 14px;
+  padding: 0 10px 0 15px;
+  margin: 2px 10px 2px 10px;
+  color: @cyan;
+  background-color: @overlay;
+  border-radius: 15px;
+}
+*/
