@@ -1,0 +1,13 @@
+@define-color background rgba(33, 36, 43, 1);
+@define-color foreground rgba(248, 248, 242, 1);
+@define-color white rgba(248, 248, 242, 1);
+@define-color purple rgba(189, 147, 249, 1);
+@define-color orange rgba(255, 184, 108, 1);
+@define-color red rgba(255, 85, 85, 1);
+@define-color green rgba(80, 250, 123, 1);
+@define-color yellow rgba(241, 250, 140, 1);
+@define-color blue rgba(98, 114, 164, 1);
+@define-color magenta rgba(187, 154, 247, 1);
+@define-color cyan rgba(139, 233, 253, 1);
+@define-color orange rgba(255, 184, 108, 1);
+@define-color pink rgba(255, 121, 198, 1);

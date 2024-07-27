@@ -1,0 +1,17 @@
+
+#!/bin/bash
+
+# Battery threshold percentage for notification
+BATTERY_THRESHOLD=1000
+
+while true; do
+    # Get the battery percentage (you may need to adjust this command based on your system)
+    BATTERY_PERCENTAGE=$(cat /sys/class/power_supply/BAT0/capacity)
+
+    if [ "$BATTERY_PERCENTAGE" -lt "$BATTERY_THRESHOLD" ]; then
+        # Send a notification using the 'swaynag' tool (you may need to install it)
+        notify-send  "Battery is low ($BATTERY_PERCENTAGE%)"
+    fi
+
+    # Sleep for a while (adjust the sleep duration as needed)
+done

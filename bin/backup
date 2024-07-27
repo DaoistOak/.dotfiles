@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Check if the input exists in the current directory
+if [ -e "$1" ]; then
+  # Create a backup file 1 by appending the current timestamp
+  backup_file="${1}_backup_$(date +%Y:%m:%d_%H:%M)"
+
+  # Check if the input is a file
+  if [ -f "$1" ]; then
+    # Copy the file to the backup file
+    cp "$1" "$backup_file"
+    echo "Backup file '$backup_file' created for '$1'."
+  fi
+
+  # Check if the input is a directory
+  if [ -d "$1" ]; then
+    # Create a tar archive of the directory and save it to the backup file
+    tar -czf "$backup_file.tar.gz" "$1"
+    echo "Backup file '$backup_file.tar.gz' created for directory '$1'."
+  fi
+
+else
+  echo "File or folder '$1' does not exist in the current directory."
+fi

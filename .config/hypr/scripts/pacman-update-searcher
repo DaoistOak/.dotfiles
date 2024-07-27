@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Run 'pacman -Qu' to check for available updates and count them.
+while true; do
+# Check if there are updates available.
+update_count=$(pacman -Qu | wc -l)
+
+  if [[ $update_count -gt 0 ]]; then
+    icon_path="/usr/share/icons/Papirus/48x48/apps/system-software-update.svg"
+    # Display a notification using notify-send.
+    notify-send -i "$icon_path" "Pacman Updates Available" "$update_count package(s) can be updated."
+  fi
+  
+  sleep 86400
+
+done

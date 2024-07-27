@@ -1,0 +1,164 @@
+/* Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com> */
+/* Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 */
+
+configuration {
+    show-icons:                     false;
+    disable-history:                false;
+	click-to-exit: 					true;
+}
+
+@import "shared/fonts.rasi"
+@import "shared/colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    border:                  		2px;
+    border-color:                  	@accent;
+    border-radius:                  14px;
+    width:                          400px;
+    height:                         420px;
+    padding:						10px;
+    location:                       center;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	margin: 						0px 0px 0px 8px;
+    padding:    					10px 5px 10px 5px;
+	background-color: 				@background;
+	text-color: 					@foreground;
+    border:                  		2px 0px 2px 2px;
+    border-color:                  	@accent;
+    border-radius:                  14px 0px 0px 14px;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"直";
+    spacing: 						1;
+    border-radius: 					14px;
+    border: 						2px;
+    background-color:             	@background;
+    text-color: 					@text;
+    border-color:					@accent;
+    padding:    					6px 10px 6px 10px;
+    font:                           "JetBrainsMono NL Nerd Font 12";
+}
+
+entry {
+    background-color:               @background;
+    text-color:                     @text;
+    border:                  		2px 2px 2px 1px;
+    border-radius:                  0px 14px 14px 0px;
+    border-color:                  	@accent;
+    placeholder-color:              @foreground;
+    placeholder:                    "";
+    expand:                         true;
+    horizontal-align:               0;
+    blink:                          true;
+    padding:                        10px 5px 10px 5px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt, entry ];
+    spacing:                        0;
+    background-color:               transparent;
+    text-color:                     @text;
+    border-radius:					15px;
+    expand:                         false;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @text;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               @background;
+    border:							2px;
+    border-radius:					14px;
+    border-color:					@accent;
+    columns:                        1;
+    lines:							7;
+    spacing:                        0px;
+    padding:						0 0px 0 0px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               transparent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	10px;
+    padding:                        10px;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  14px;
+    padding:						10px 0px 10px 0px;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           0px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+	font:                           "JetBrainsMono NL Nerd Font 10";
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0;
+    margin:                         0px 0px 0px 0px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @foreground;
+    text-color:                     @foreground;
+    border-radius:                  0px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @background;
+    text-color:                     @foreground;
+}
+
+element selected {
+    background-image:               linear-gradient(to right,#f0c6c6 , #F4DBD6);
+    background-color:				transparent;
+    text-color:                     @background;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	@accent;
+}
+
+element selected.urgent {
+    background-color:               @foreground;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background;
+    color:                          @foreground;
+}

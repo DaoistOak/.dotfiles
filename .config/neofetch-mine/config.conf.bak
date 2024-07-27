@@ -1,0 +1,43 @@
+print_info() {
+       prin "\n"
+       prin "\n"
+   prin "\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n ${cl1} : ${cl8}Shridal"
+   prin "┌──────────────────────────────────────┐"
+          info "\n \n ${cl1} " distro
+          info "\n \n ${cl2} " model
+          info "\n \n ${cl6}  " kernel
+          info "\n \n ${cl4} " uptime
+          info "\n \n ${cl5} " packages
+          info "\n \n ${cl6} " shell
+          info "\n \n ${cl1}󰹑 " resolution
+          info "\n \n ${cl2} " wm
+          info "\n \n ${cl3}﯑ " wm_theme
+          # info "\n \n ${cl4} " theme
+          # info "\n \n ${cl5} " icons
+          info "\n \n ${cl6} " term
+          info "\n \n ${cl1} " cpu
+          info "\n \n ${cl2} " gpu
+          info "\n \n ${cl3} " memory
+   prin "└──────────────────────────────────────┘"
+    prin "\n"
+    prin "\n \n ${cl7}──${cl1}────${cl2}────${cl3}────${cl4}────${cl5}────${cl6}────${cl7}──"
+    # prin "\n \n \n \n \n \n ${c0}⬤ \n \n ${c1}⬤ \n \n ${c2}⬤ \n \n ${c3}⬤ \n \n ${c4}⬤ \n \n ${c5}⬤ \n \n ${c6}⬤ \n \n ${c7}⬤"
+}
+image_source="/home/shridal/.config/neofetch/ASCII/Arch.txt"
+reset="\033[0m"
+red="\u001b[38;2;255;85;85m"
+green="\u001b[38;2;80;250;123m"
+yellow="\u001b[38;2;241;250;140m"
+blue="\u001b[38;2;189;147;249m"
+magenta="\u001b[38;2;255;121;198m"
+cyan="\u001b[38;2;139;233;253m"
+white="\u001b[38;2;248;248;242m"
+
+cl0="${reset}"
+cl1="${red}"
+cl2="${green}"
+cl3="${yellow}"
+cl4="${blue}"
+cl5="${magenta}"
+cl6="${cyan}"
+cl7="${white}"

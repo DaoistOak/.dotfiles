@@ -1,0 +1,4 @@
+ #!/bin/bash
+title="$1"
+max_length=15  # Adjust this to your desired character limit
+echo "${title:0:$max_length}"

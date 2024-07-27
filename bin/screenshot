@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Function to get the current date and time in the format: YYYY-MM-DD_HH-MM-SS
+get_date_time() {
+  date +"%Y-%m-%d_%H-%M-%S"
+}
+
+# Main function to capture the screenshot
+capture_screenshot() {
+  # Replace '/path/to/folder/' with the actual path to the designated folder
+  output_folder="$HOME/Pictures/Screenshot/"
+
+  # Create the output folder if it doesn't exist
+  mkdir -p "$output_folder"
+
+  # Get the current date and time
+  date_time=$(get_date_time)
+
+  # Create the filename for the screenshot
+  filename="ScreenShot_${date_time}.png"
+
+  # Full path of the screenshot
+  screenshot_path="${output_folder}${filename}"
+
+  # Capture the screenshot of the designated area
+  grimblast save area "$screenshot_path"
+
+  # Check if the screenshot was saved successfully
+  if [ $? -eq 0 ]; then
+    notify-send -i picture "ScreenShot Taken" "The Image is saved at '$output_folder' with the name '$filename'"
+  else
+    notify-send -i error "ScreenShot Failed" "There was an error while capturing the screenshot."
+  fi
+}
+
+# Call the main function to capture the screenshot
+capture_screenshot

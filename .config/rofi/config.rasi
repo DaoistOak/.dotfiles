@@ -1,0 +1,3 @@
+configuration {
+    directory: "$XDG_CONFIG_HOME/hypr/rofi";
+}

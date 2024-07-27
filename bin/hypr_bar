@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+DIR="/usr/bin"
+TOGGLE=/tmp/.bartoggle
+
+if [ ! -e $TOGGLE ]; then
+    touch $TOGGLE
+    "$DIR/eww" open bar
+
+
+else
+    rm $TOGGLE
+    killall eww
+    "$DIR/eww" daemon
+fi

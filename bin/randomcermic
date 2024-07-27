@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Path to the directory containing images
+image_dir="$HOME/Pictures/cermic"
+
+# Check if the directory exists
+if [ ! -d "$image_dir" ]; then
+    echo "Image directory not found."
+    exit 1
+fi
+
+# Get a list of image files in the directory
+image_files=("$image_dir"/*.png)
+
+# Check if there are any image files
+if [ ${#image_files[@]} -eq 0 ]; then
+    echo "No image files found in the directory."
+    exit 1
+fi
+
+# Select a random image from the array
+random_index=$(( RANDOM % ${#image_files[@]} ))
+random_image="${image_files[random_index]}"
+
+# Display the selected image's name
+cermic 1 -f $random_image
+echo " "
+
+exit 0

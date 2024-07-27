@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+DIR="/usr/bin"
+TOGGLE=/tmp/.dashtoggle
+
+if [ ! -e $TOGGLE ]; then
+    touch $TOGGLE
+    "$DIR/eww" open-many blur_full weather profile quote search_full disturb-icon vpn-icon home_dir screenshot power_full reboot_full lock_full logout_full suspend_full close_full
+    NUM="$[ $RANDOM % 2 + 1 ]"
+    echo "$NUM"
+
+        case $NUM in
+
+        2)
+            sh $DIR/notipose
+            ;;
+
+        1)
+            sh $DIR/notieye
+            ;;
+        *)
+            echo -n "unknown"
+            ;;
+esac
+
+else
+    rm $TOGGLE
+    killall eww
+    "$DIR/eww" daemon
+fi

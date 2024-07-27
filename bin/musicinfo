@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# Check if mpc is installed
+if ! command -v mpc &>/dev/null; then
+    echo "Error: mpc command not found. Please install MPD and mpc."
+    exit 1
+fi
+
+# Check for the correct number of arguments
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 [artist|title]"
+    exit 1
+fi
+
+# Get the argument
+option="$1"
+
+# Get the currently playing song's artist and title
+artist=$(mpc current -f "%artist%")
+title=$(mpc current -f "%title%")
+
+# Output the requested information
+case "$option" in
+    artist)
+        echo "$artist"
+        ;;
+    title)
+        echo "$title"
+        ;;
+    *)
+        echo "Invalid option. Usage: $0 [artist|title]"
+        exit 1
+        ;;
+esac

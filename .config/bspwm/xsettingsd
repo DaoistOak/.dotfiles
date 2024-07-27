@@ -1,0 +1,13 @@
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+
+Net/ThemeName "catppuccin-macchiato-rosewater-standard+default"
+Net/IconThemeName "Papirus-Dark"
+Gtk/CursorThemeName "catppuccin-macchiato-rosewater"
+Gtk/CursorThemeSize "32"
+Net/EnableEventSounds "0"
+Net/EnableInputFeedbackSounds "0"
+Xft/DPI "-1"
+Xft/Hinting 1
+Xft/HintStyle "hintslight"
+Xft/Antialias 1
+Xft/RGBA "VRGB"

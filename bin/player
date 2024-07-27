@@ -1,0 +1,12 @@
+#!/bin/bash
+DIR="/usr/bin"
+TOGGLE=/tmp/.player-toggle
+
+if [ ! -e $TOGGLE ]; then
+    touch $TOGGLE
+    "$DIR/eww" open player
+else
+    rm $TOGGLE
+    killall eww
+    "$DIR/eww" daemon
+fi
