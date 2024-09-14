@@ -20,7 +20,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
 # Which plugins would you like to load?
-plugins=(git zsh-syntax-highlighting autojump zsh-autosuggestions docker docker-compose docker-machine fzf pyenv python tmux ufw zsh-navigation-tools sudo history-substring-search )
+plugins=(git zsh-syntax-highlighting autojump zsh-autosuggestions docker docker-compose fzf pyenv python tmux ufw zsh-navigation-tools sudo history-substring-search )
 # Source oh-my-zsh and plugins
 source $ZSH/oh-my-zsh.sh
 # Custom aliases

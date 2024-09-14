@@ -130,8 +130,7 @@ element-text {
 }
 
 element selected {
-    background-image:               linear-gradient(to right,#f0c6c6 , #F4DBD6);
-    background-color:				transparent;
+    background-color:				@accent;
     text-color:                     @background;
     border:                  		0px;
     border-radius:                  0px;

@@ -1,11 +1,11 @@
-# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# DO NOT EDIT! This file will be overwritten by nwg-look.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/shridal/.gtkrc-2.0.mine"
-gtk-theme-name="Adwaita-dark"
+gtk-theme-name="catppuccin-frappe-teal-standard+default"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="JetBrainsMonoNL Nerd Font Propo Ultra-Light 10"
-gtk-cursor-theme-name="catppuccin-macchiato-rosewater"
+gtk-cursor-theme-name="catppuccin-macchiato-light-cursors"
 gtk-cursor-theme-size=32
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
-gtk-xft-rgba="VRGB"
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"

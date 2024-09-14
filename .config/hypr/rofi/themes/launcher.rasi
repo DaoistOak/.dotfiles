@@ -114,17 +114,17 @@ element {
     cursor:                      pointer;
 }
 element normal.active {
-    background-image:            linear-gradient(to right, #19B466, #7BF4B7);
+    background-color:            @accent;
     text-color:                  black;
     border-radius:               0px;
 }
 element selected.normal {
     border-radius:               0px;
-    background-image:            linear-gradient(to right,#f0c6c6 , #F4DBD6);
+    background-color:            @accent;
     text-color:                  black;
 }
 element selected.active {
-    background-image:            linear-gradient(to right, #F4DBD6, #EAACAB);
+    background-image:            @accent;
     text-color:                  black;
     border-radius:               0px;
 }
@@ -152,12 +152,12 @@ button {
     font:                        "Iosevka Nerd Font 10";
     padding:                     10px;
     border-radius:               100%;
-    background-color:            #8aadf4;
+    background-color:            @active;
     text-color:                  white;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            #8bd5ca;
+    background-color:            @urgent;
     text-color:                  black;
 }
 

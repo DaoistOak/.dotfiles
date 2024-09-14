@@ -1,4 +1,4 @@
-@import url("themes/Catppuccin.css");
+@import url("themes/catppuccin-macchiato-auto.css");
 * {
 	border: none;
 	font-family: "JetBrainsMono Nerd Font";
@@ -95,7 +95,7 @@ window#waybar {
 	color: @foreground;
 	background: transparent;
 	border-radius: 14px;
-	border: 2px solid @rosewater;
+	border: 2px solid @accent;
 	margin: 2px 0px 2px 10px;
 	padding: 0px 6px;
 }
@@ -107,7 +107,7 @@ window#waybar {
 }
 /*Window Name*/
 #window {
-	background: @rosewater;
+	background: @accent;
 	color: @overlay;
 	font-size: 6px;
     border-radius: 15px;
@@ -136,7 +136,7 @@ window#waybar.empty #window {
     margin: 3px 1px 3px 1px;
     padding: 0px 1px 0px 1px;
     border-radius: 15px;
-    border: 1px @rosewater;
+    border: 1px @accent;
     font-weight: bold;
     font-style: normal;
     opacity: 1;
@@ -153,8 +153,8 @@ window#waybar.empty #window {
     opacity: 0.6;
 }
 #workspaces button.active {
-    color: @rosewater;
-    background: @rosewater;
+    color: @accent;
+    background: @accent;
     border-radius: 15px;
     min-width: 30px;
     transition: all 0.5s ease-in-out;
@@ -163,8 +163,8 @@ window#waybar.empty #window {
     margin: 1px 1px;
 }
 #workspaces button:hover {
-    color: @rosewater;
-    background: @rosewater;
+    color: @accent;
+    background: @accent;
     border-radius: 15px;
     opacity:0.7;
 }
@@ -399,7 +399,7 @@ window#waybar.empty #window {
 */
 tooltip {
 	border-radius: 15px;
-	border: 2px solid @rosewater;
+	border: 2px solid @accent;
 	padding: 15px;
 	color: @foreground;
 	background-color: @overlay;

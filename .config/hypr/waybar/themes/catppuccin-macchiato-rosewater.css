@@ -1,0 +1,21 @@
+@define-color accent rgb(244, 219, 214);
+
+@define-color background rgb(30, 32, 48);
+@define-color background-transparent rgba(36, 39, 58, 0.7);
+@define-color foreground rgb(202, 211, 245);
+@define-color exp rgba(30, 32, 48, 0.1);
+@define-color overlay rgb(36, 39, 58);
+@define-color overlay2 rgb(110, 115, 141);
+
+@define-color white rgb(202, 211, 245);
+@define-color purple rgb(198, 160, 246);
+@define-color orange rgb(245, 169, 127);
+@define-color red rgb(237, 135, 150);
+@define-color green rgb(166, 218, 149);
+@define-color yellow rgb(238, 212, 159);
+@define-color blue rgb(138, 173, 244);
+@define-color magenta rgb(238, 153, 160);
+@define-color cyan rgb(139, 213, 202);
+@define-color pink rgb(245, 189, 230);
+@define-color rosewater rgb(244, 219, 214);
+

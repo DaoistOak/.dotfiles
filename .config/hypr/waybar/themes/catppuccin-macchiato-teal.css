@@ -1,3 +1,5 @@
+@define-color accent rgb(139, 213, 202);
+
 @define-color background rgb(30, 32, 48);
 @define-color background-transparent rgba(36, 39, 58, 0.7);
 @define-color foreground rgb(202, 211, 245);

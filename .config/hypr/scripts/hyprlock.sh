@@ -7,6 +7,5 @@ fi
 
 # Take screenshot using grim and save it as /tmp/hyprlock/screenshot.png
 grim /tmp/hyprlock/screenshot.png
-
 hyprlock
 killall hyprlock

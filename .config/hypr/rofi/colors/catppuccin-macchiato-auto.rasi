@@ -1,0 +1,10 @@
+* {
+    background:     #24273A;
+    text:			#CAD3F5;
+    accent:			#D9E0EE;
+    background-alt: #24273A99;
+    foreground:     #D9E0EE;
+    selected:       #7AA2F7;
+    active:         #6e738d;
+    urgent:         #8bd5ca;
+}
